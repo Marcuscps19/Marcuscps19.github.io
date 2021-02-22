@@ -7,7 +7,7 @@
     width:100%;
     position: fixed;
     border-bottom: 3px solid #fca311;
-    background-color: rgba(0,0,0,0.9);
+    background-color: #000000;
 }
 
 .div_logo {
@@ -163,13 +163,12 @@
 }
 
 .p_skills_title {
-    align-self: flex-start;
     font-size: 30px;
     border-bottom: 2px solid #fca311;
     color: #e5e5e5;
     margin-top: 45px;
-    margin-left: 7%;
     position:absolute;
+    margin-left: 7%;
 }
 
 .div_skills_container {
