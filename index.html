@@ -1,35 +1,85 @@
-<!-- 
-1. Seu nome completo;
-2. Uma foto atual sua, acompanhada de um texto alternativo, que deve ser a descrição da foto que você está usando;
-3. Uma breve descrição sobre você, destacando algumas informações como nacionalidade e a cidade/estado onde mora;
-4. Uma lista de habilidades que você possui, com destaque para aquela de que você mais se orgulha;
-5. Um link interno para a sua foto;
-6. Um link externo para algum blog de que você goste, que abra em uma nova aba;
-7. Partes do seu portfólio destacadas com negrito e/ou itálico;
-8. Um índice com links internos para as diferentes seções do seu portfólio. -->
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Portfólio Marcus Cesar</title>
 </head>
 <body>
-    <h1>Marcus Cesar Hüsemann Filho</h1>
-    <img id="foto_do_marcus" src="/images/perfil.png" alt="foto do marcus">
-    <p>
-        Brasileiro, natural de Campinas/SP.
-    </p>
-    <ul>
-        <li>HTML/CSS</li>
-        <li>Javascript</li>
-        <li>Comunicativo</li>
-        <li>NodeJS</li>
-        <li>MySql</li>
-    </ul>
-    <a href="#foto_do_marcus"></a>
-    
+
+    <div class="div_logo">
+        <img class="img_logo" src="images/my_logo.png" alt="">
+    </div>
+    <nav class="menu">
+        <ul class="ul_items">
+            <li class="nav_item"><a href="#about">About</a></li>
+            <li class="nav_item"><a href="#skills">Skills</a></li>
+            <li class="nav_item"><a href="#">Curiosities</a></li>
+            <li class="nav_item"><a href="#">Blogs</a></li>
+        </ul>
+
+        <ul class="ul_icons">    
+            <li class="nav_icon"><a href="https://www.github.com/Marcuscps19"><img class="img_icon" src="/images/git_icon.png" alt="Ícone GitHub"></a></li>
+            <li class="nav_icon"><a href="#"><img class="img_icon" src="/images/in_icon.png" alt="Ícone Linkedin"></a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="div_banner">    
+            <p class="p_banner_title">MARCUS CESAR HÜSEMANN FILHO</p>
+            <div class="div_subtitle">
+                <img class="icon_banner_subtitle" id="img_icon" src="/images/gear_icon.png" alt="Ícone Engrenagem">
+                <p class="p_banner_subtitle"> Software Developer</p>
+            </div>
+            <span id="about"></span>
+        </div>
+        <div class="div_about">
+            <div class="div_img"></div>
+            <p class="p_about_title">About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <div class="div_about_text">
+                <p>My name is Marcus, I am Brazilian, born in Campinas / SP.<br>
+                    I am currently a software development student at Trybe.</p>
+            </div>
+        </div>
+        <span id="skills"></span>
+
+        <div class="div_skills">
+            <p class="p_skills_title">Skills&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <div class="div_skills_container">
+                <div class="div_skills_content">
+                    <p>Soft Skills</p>
+                    <ul>
+                        <li>Team work</li>
+                        <li>Creative</li>
+                        <li>Sociable</li>
+                        <li>Curious</li>
+                    </ul>
+                </div>
+                <div class="div_skills_content">
+                    <p>Front-end</p>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>Javascript</li>
+                        <li>Typescript</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="div_skills_content">
+                    <p>Back-end</p>
+                    <ul>
+                        <li>NodeJs</li>
+                        <li>MySql</li>
+                        <li>SQL Server</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+    </main>
 </body>
 </html>
